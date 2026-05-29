@@ -18,7 +18,11 @@ def rango_matrice(m: list) -> int:
 
 def risolvi_sistema_lineare(A: list, b: list) -> np.ndarray:
     """Sub-task 3: Risolvere un Sistema Lineare."""
-    pass
+
+    A_arr = np.array(A)
+    b_arr = np.array(b)
+    return np.linalg.solve(A_arr, b_arr)
+
 
 def correlazione_matrici(m1: list, m2: list) -> np.ndarray:
     """Sub-task 4: Correlazione tra Matrici 2x2."""
